@@ -1,4 +1,4 @@
-module github.com/zvirja/ReminderyGo
+module remindery
 
 go 1.21.5
 
