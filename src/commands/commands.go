@@ -25,7 +25,9 @@ func SetupCommands(bot *tele.Bot, env *environment.Environment) (err error) {
 	commands := [...]interface{}{
 		StartCmd{
 			Version: env.Version,
-			Commit:  env.Commit,
+		},
+		OpenAICmd{
+			Token: env.Config.OpenAIToken,
 		},
 	}
 

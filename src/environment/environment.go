@@ -1,6 +1,11 @@
 package environment
 
+type AppVersion struct {
+	Version   string
+	GitCommit string
+}
+
 type Environment struct {
-	Version string
-	Commit  string
+	Version AppVersion
+	Config  Config
 }
